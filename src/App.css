@@ -2,6 +2,19 @@
   text-decoration: none;
 }
 
+button {
+  border: none;
+  height: 1.8rem;
+  width: 4rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
 .navbar {
   background-color: #fff;
   padding: 1rem;
@@ -47,11 +60,6 @@
   gap: 1rem;
 }
 
-.page {
-  display: flex;
-  flex-direction: column;
-}
-
 .home-hero {
   text-align: center;
   margin-top: 3rem;
@@ -62,7 +70,14 @@
 }
 
 .page-title {
-  margin: 3rem 2rem;
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 1rem;
 }
 
 .products-grid {
@@ -72,9 +87,83 @@
 }
 
 .product-card {
+  border-radius: 0.5rem;
   margin-bottom: 3rem;
+  background-color: #120e1f;
+  overflow: hidden;
 }
 
 .product-card-image {
-  height: 200px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.product-card-content {
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+}
+
+.product-card-content button {
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.auth-page {
+  display: flex;
+  justify-content: center;
+}
+
+
+.container {
+  margin: 3rem;
+  padding: 1rem 3rem;
+  border-radius: 15px;
+  background-color: #120e1f;
+  color: white;
+  width: fit-content;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-input {
+  /* margin-bottom: 1rem; */
+}
+
+.auth-form {
+  padding-bottom: 1rem;
+}
+
+.form-button {
+  margin-top: 1rem;
+  height: 35px;
+  width: 70px;
+  color: navy;
+  border-radius: 8px;
+  background-color: greenyellow;
+  border: none;
+}
+
+.form-group-1 {
+  margin-bottom: 0.5rem;
+}
+
+.form-group p {
+  font-size: 0.8rem;
+  color: crimson;
+}
+
+.auth-switch p {
+  font-size: 0.8rem;
+}
+
+.auth-switch a {
+  color: plum;
+}
+
+.auth-switch a:hover {
+  cursor: pointer;
+}
+
+.space-span {
+  margin-bottom: 2rem;
 }
