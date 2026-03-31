@@ -15,8 +15,8 @@ export default function Navbar() {
         <div className="navbar-auth">
           {!user ?
             <div className="navbar-auth-links">
-              <button to="/auth">Login</button>
-              <button to="/auth">Signup</button>
+              <Link to="/auth"><button >Login</button></Link>
+              <Link to="/auth"><button to="/auth">Signup</button></Link>
             </div>
             :
             <div className="navbar-auth-links">
